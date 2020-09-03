@@ -6,9 +6,6 @@ import logout from './assets/logout.svg'
 class Header extends React.Component{
     constructor(){
         super();
-        this.setState={
-
-        }
     }
 
     render(){

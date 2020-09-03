@@ -66,7 +66,7 @@ class Table extends React.Component {
           {node.startODOMeter} <img src={rightArrow}/> {node.endODOMeter}
         </div>
         <div className="col-3 border">
-          <div><button className="btn btn-info btn-sm m-2">Movement Report</button><button className="btn btn-info btn-sm">Stopage Report</button></div>
+          <div className="d-flex justify-content-around"><button className="btn btn-info btn-sm">Movement Report</button><button className="btn btn-info btn-sm">Stopage Report</button></div>
         </div>
       </div>
     })

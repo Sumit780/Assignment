@@ -37,6 +37,10 @@ class Home extends React.Component {
 
     }
 
+    loading = () =>{
+        return <h2 className="d-flex justify-content-center m-5">Loading....</h2>
+    }
+
     render() {
         const { result, isloading } = this.state;
         return (
@@ -45,6 +49,7 @@ class Home extends React.Component {
                     <Header />
                     {!isloading && <Summary result={result} />}
                     {!isloading && <Tables tripDetails={result.data.tripDetails} />}
+                    {isloading && this.loading()}
                 </div>
             </>
         )
